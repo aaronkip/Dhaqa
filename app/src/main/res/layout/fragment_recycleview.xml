@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white"
+                android:layout_marginLeft="10dp"/>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/toolbartext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add Event"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/noresult"
+        android:visibility="visible"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="No messages yet."
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:visibility="visible"
+            android:id="@+id/textViewSFProDisplayMedium2" />
+
+        <ImageView
+            android:id="@+id/sleep"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_above="@+id/textViewSFProDisplayMedium2"
+            android:src="@drawable/notfound" />
+    </RelativeLayout>
+</RelativeLayout>

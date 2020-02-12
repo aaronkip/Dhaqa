@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewflipper">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+          <android.support.v7.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:layout_weight="1"
+              app:contentInsetLeft="0dp"
+              app:contentInsetStart="0dp"
+              android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_back"/>
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:id="@+id/lllogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <customfonts.TextViewSFProDisplayMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logindesc"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_margin="18dp"/>
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/lllogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_edittext_background">
+
+            <customfonts.TextViewSFProDisplayMedium
+                android:id="@+id/countrycode"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="+254"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_toRightOf="@+id/countrycode"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <customfonts.EditTextSFProDisplayRegular
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:hint="@string/hintphone"
+                android:textColorHint="@color/gray"
+                android:layout_marginLeft="5dp"
+                android:inputType="phone"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:background="@color/transparentt"
+                android:layout_toRightOf="@+id/countrycode"/>
+
+        </RelativeLayout>
+
+            <customfonts.Button_SF_Pro_Display_Medium
+                android:id="@+id/buttonlogin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round_1"
+                android:layout_marginTop="10dp"
+                android:text="@string/login"
+                android:textColor="@color/white"/>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/orlogin"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+                <customfonts.Button_SF_Pro_Display_Medium
+                    android:id="@+id/buttonfb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_round_1"
+                    android:backgroundTint="@color/com_facebook_blue"
+                    android:text="@string/facebook"
+                    android:textColor="@color/white"/>
+                <customfonts.Button_SF_Pro_Display_Medium
+                    android:id="@+id/buttongmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/button_round_1"
+                    android:backgroundTint="@color/red"
+                    android:text="@string/google"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+   </LinearLayout>
+    </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/verifycode"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/nextbtn2"
+            android:onClick="Nextbtn"
+            android:textSize="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparentt"
+            android:layout_centerVertical="true"
+            android:textColor="@color/parentcolor"/>
+
+    </ViewFlipper>
+</RelativeLayout>

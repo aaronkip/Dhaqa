@@ -1,0 +1,41 @@
+﻿<resources>
+    <string name="app_name">Dhaka</string>
+
+    <string name="facebook_app_id">2241115632859271</string>
+    <string name="fb_login_protocol_scheme">2241115632859271</string>
+    <string name="admob_publiserID"></string>
+    <string name="admob_interstitial"></string>
+    <string name="admob_bannerID"></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="logindesc">Enter a phone number that can be used to verify your identity with a text message or phone call. </string>
+    <string name="hintphone">your phone number </string>
+    <string name="orlogin">Or Login With</string>
+
+    <string name="verifydesc">We sent you a code to verify your phone number</string>
+    <string name="norecieve">I didn\'t receive a code!</string>
+    <string name="resend">Resend</string>
+
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    <string name="close">Are your sure you want to close?</string>
+
+    <string name="subject">subject</string>
+    <string name="email_text">text</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_favourite">Favourites</string>
+    <string name="menu_stores">Salons</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="device">android</string>
+
+    <string-array name="purpose">
+        <item>Sale</item>
+        <item>Rent</item>
+    </string-array>
+
+</resources>

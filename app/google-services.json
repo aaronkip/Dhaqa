@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "15576345446",
+    "firebase_url": "https://fir-hotel-7c607.firebaseio.com",
+    "project_id": "fir-hotel-7c607",
+    "storage_bucket": "fir-hotel-7c607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15576345446:android:37ef39b1a4bfa9e70376a7",
+        "android_client_info": {
+          "package_name": "com.kenova.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15576345446-8l56i1k9pq1kcj8ucgaps23lfbcl3dnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFWXB5WD8BL6Nn4sy7HlGQnhfcZBRnE_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15576345446-8l56i1k9pq1kcj8ucgaps23lfbcl3dnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15576345446:android:930dd1fdf3dba4d4",
+        "android_client_info": {
+          "package_name": "com.my.hoteldemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15576345446-8l56i1k9pq1kcj8ucgaps23lfbcl3dnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFWXB5WD8BL6Nn4sy7HlGQnhfcZBRnE_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15576345446-8l56i1k9pq1kcj8ucgaps23lfbcl3dnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
